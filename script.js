@@ -20,7 +20,7 @@ const updateParameters = () => {
     numSets = parseInt(document.querySelector("#sets").value);
     setLength = parseInt(document.querySelector("#setLength").value);
     genMin = parseInt(document.querySelector("#lowerBound").value);
-    genMax = patseInt(document.querySelector("#upperBound").value);
+    genMax = parseInt(document.querySelector("#upperBound").value);
 
     useCompareFcn = (document.querySelector("#comparisonFunction").value.length > 2);
     console.log(useCompareFcn);
