@@ -37,11 +37,11 @@ const updateParameters = () => {
 
 const validateInputs = (numSets, setLength, genMin, genMax, minThreshold) => {
     let complaints = [];
-    if(numSets < 1 || numSets > 100){
-        complaints.push("Number of sets is not in the allowed range (1-100)");
+    if(numSets < 1 || numSets > 1000){
+        complaints.push("Number of sets is not in the allowed range (1-1000)");
     }
-    if(setLength<1 || setLength>100){
-        complaints.push("Set length is not in the allowed range (1-100)");
+    if(setLength<1 || setLength>1000){
+        complaints.push("Set length is not in the allowed range (1-1000)");
     }
     if(genMax < genMin){
         complaints.push("Generation maximum cannot be less than generation minimum");
