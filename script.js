@@ -17,14 +17,14 @@ let renderedOutput = [];
 const updateParameters = () => {
     validationComplaints = "";
     passedValidation = false;
-    numSets = document.querySelector("#sets").value;
-    setLength = document.querySelector("#setLength").value;
-    genMin = document.querySelector("#lowerBound").value;
-    genMax = document.querySelector("#upperBound").value;
+    numSets = parseInt(document.querySelector("#sets").value);
+    setLength = parseInt(document.querySelector("#setLength").value);
+    genMin = parseInt(document.querySelector("#lowerBound").value);
+    genMax = patseInt(document.querySelector("#upperBound").value);
 
     useCompareFcn = (document.querySelector("#comparisonFunction").value.length > 2);
     console.log(useCompareFcn);
-    minThreshold = document.querySelector("#numOfOccurances").value;
+    minThreshold = parseInt(document.querySelector("#numOfOccurances").value);
     let delimiterStr = document.querySelector("#delimiter").value;
     delimiter = (delimiterStr.length > 0) ? delimiterStr : " ";
     if(useCompareFcn){
