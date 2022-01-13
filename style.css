@@ -1,0 +1,102 @@
+body {
+    padding: 1%;
+}
+
+#parameters {
+    margin: 10px 10px;
+}
+
+fieldset {
+    border: 2px solid black;
+}
+
+legend {
+    background-color: black;
+    color: white;
+    font-size: 14pt;
+    padding: 4px;
+}
+
+input {
+    width: 20%;
+    font-size: 12pt;
+}
+
+form h1 {
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 4px 0 6px 0;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+#generate {
+    width: 100%;
+    padding: 0 auto;
+}
+
+#generate button{
+    width: auto;
+    margin: 10px auto 0 auto;
+    font-size: 16pt;
+    text-align: center;
+    padding: 8px;
+    background-color: #2382f0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#generate button:hover{
+    background-color: #0d3b70;
+    transition: 0.3s ease;
+}
+
+#result h1 {
+    font-weight: bold;
+    font-size: 14pt;
+    display: block;
+}
+
+#result h2 {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#result h2, p {
+    font-size: 12pt;
+}
+
+#result strong {
+    font-weight: bold;
+}
+
+#result {
+    margin: 1%;
+    background-color: rgb(226, 226, 226);
+    padding: 1.5%;
+    min-height: 300px;
+    margin-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(226, 226, 226);
+    margin: 0;
+    left: 0;
+    border-top: 2px solid black;
+    padding: auto auto;
+}
+
+footer p {
+    font-size: 12pt;
+    font-weight: medium;
+    text-align: center;
+    height: 100%;
+    padding: 0.8em 0;
+}
