@@ -120,6 +120,7 @@ const output = () => {
         generated += 
         `<h2>Advanced</h2>
         <p><strong>Expression: </strong> ${compareFcnStr}</p>
+        <p><strong>Minimum expression triggers per set: </strong> ${minThreshold}</p>
         <p><strong>Number of times flagged: </strong> ${flaggedSets}</p>
         <p><strong>Simulation probability: </strong> ${flaggedSets/numSets}</p>
         `;
