@@ -98,6 +98,12 @@ const compareFcn = x => {
         let fun;
         eval( "fun = (" + document.querySelector("#comparisonFunction").value + ")");
         console.log(fun);
+        if(typeof fun != "boolean"){
+            alert("Compare function does not evaluate to a boolean!");
+            compareFcnStr = "";
+            useCompareFcn = false;
+            return false;
+        }
         return fun;
     } catch {
         alert("Invalid compare function!");
