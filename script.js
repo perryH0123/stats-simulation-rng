@@ -103,8 +103,9 @@ const compareFcn = x => {
             compareFcnStr = "";
             useCompareFcn = false;
             return false;
+        } else {
+            return fun;
         }
-        return fun;
     } catch {
         alert("Invalid compare function!");
         compareFcnStr = "";
