@@ -49,6 +49,9 @@ const validateInputs = (numSets, setLength, genMin, genMax, minThreshold) => {
     if(minThreshold < 1 && useCompareFcn){
         complaints.push("Minimum threshold must be greater than zero if using an expression.")
     }
+    if(minThreshold > numSets){
+        complaints.push("Minimum threshold should be less or equal to than the number of sets.");
+    }
     if(complaints.length < 1){
         passedValidation=true;
     } else {
